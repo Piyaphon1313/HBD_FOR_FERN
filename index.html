@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Happy Birthday ♥ FERN ♥</title>
+  
+  <!-- ดึงฟอนต์สวยๆ จาก Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mali:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- กล่องสำหรับปล่อยเม็ดสีพาสเทลและลูกโป่ง (อยู่ทั่วจอแต่กดทะลุได้) -->
+  <div id="fx-container" class="fx-container"></div>
+
+  <!-- ไฟล์เสียงเพลง Happy Birthday (นำไฟล์ .mp3 มาใส่ตามตำแหน่งนี้ได้เลย) -->
+  <audio id="hbd-song" src="audio/hbd.mp3" preload="auto"></audio>
+
+  <div class="background-overlay">
+
+    <!-- กรอบรูปโพลารอยด์รอบพื้นหลัง (ซ้าย 2 / ขวา 2) -->
+    <div class="bg-polaroids">
+      <div class="bg-photo-frame left-top">
+        <img src="img/FernPic2.jpg" alt="Memory 1">
+      </div>
+      <div class="bg-photo-frame left-bottom">
+        <img src="img/FernPic3.jpg" alt="Memory 2">
+      </div>
+      <div class="bg-photo-frame right-top">
+        <img src="img/FernPic4.jpg" alt="Memory 3">
+      </div>
+      <div class="bg-photo-frame right-bottom">
+        <img src="img/FernPic5.jpg" alt="Memory 4">
+      </div>
+    </div>
+
+    <!-- การ์ดกระดาษหลักตรงกลาง -->
+    <main class="card-paper">
+      
+      <!-- หัวข้อภาษาอังกฤษและชื่อ -->
+      <div class="title-group">
+        <h1 class="title">Happy Birthday</h1>
+        <h2 class="title-name">♥ FERN ♥</h2>
+      </div>
+
+      <!-- กรอบรูปภาพ (สไตล์โพลารอยด์) -->
+      <div class="photo-frame">
+        <img src="img/FernPic1.jpg" alt="Birthday Person" class="lover-photo">
+      </div>
+
+      <!-- ข้อความอวยพรสั้นๆ -->
+      <div class="message-box">
+        <p class="greeting">"21st Birthday"</p>
+        <p class="greeting">Since 16 November 2005</p>
+        <p class="wish">
+          แฮปปี้เบิร์ดเดย์งับเฟิร์น ขอให้มีความสุข ใช้ชีวิตให้สนุก ได้ทำสิ่งที่อยากทำ เกรดดีๆ อยู่ด้วยกันแบบนี้ก็พอแล้ว💐
+        </p>
+      </div>
+
+      <!-- โซนเค้ก -->
+      <div class="cake-section">
+        <button id="cake-btn" class="cake-btn" aria-label="กดที่เค้ก">
+          <img src="img/cake2.png" alt="Birthday Cake" class="cake-img">
+        </button>
+        <span id="tap-hint" class="tap-hint">try hit that cake</span>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
